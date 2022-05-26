@@ -36,21 +36,22 @@
   
   .nav_logo {
     position: relative;   
-    height: 30px;
+    height: 33px;
     margin-left: 2.2em;
   }
   
   .nav_menu {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     margin-left: 2em;
+    margin-top: 10px;
   }
   
   .nav_item {
     color: whitesmoke;
     margin-left: 1.4em;
-    font-size: small;
+    font-size: .9em;
     font-weight: lighter;
     text-decoration: none;
     transition: ease-in-out 600ms;
@@ -66,7 +67,7 @@
     align-items: center;
     gap: 20px;
     color:white;  
-    margin-left:560px;
+    margin-left:510px;
     font-size: 1.3em;
   }
   .iconos input{
@@ -80,6 +81,7 @@
     border-radius: 0%;
     color: white;
     padding: 5%;
+    
   }
 
   .iconos input::placeholder{

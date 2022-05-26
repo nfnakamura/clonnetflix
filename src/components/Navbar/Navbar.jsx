@@ -38,7 +38,7 @@ const Navbar = () => {
         </a>
 
         <a className="nav_item" href="#">
-          Peliculas
+          Películas
         </a>
 
         <a className="nav_item" href="#">

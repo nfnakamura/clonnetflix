@@ -5,7 +5,7 @@
     width: 100%;
     display: flex;
     padding: 20px;
-    height: 20px;
+    height: 60px;
     left: 0;
     justify-content: left;
     /* Animation */
@@ -18,20 +18,24 @@
   .user {
     border-radius: 8px;
     position: fixed;
-    top: 10px;
-    right: 20px;
-    width: 40px;
+    top: 15px;
+    right: 30px;
+    width: 30px;
     object-fit: contain;
+  }
+
+  .user:hover{
+    cursor:pointer;
   }
   
   .nav_black {
     background-color: #1b1b1b;
     transition: ease-in-out 800ms;
+    
   }
   
   .nav_logo {
-    position: relative;
-    top: -10px;
+    position: relative;   
     height: 30px;
     margin-left: 2.2em;
   }
@@ -56,3 +60,37 @@
     color: rgb(155, 155, 155);
   }
   
+
+  .iconos{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    color:white;  
+    margin-left:560px;
+    font-size: 1.3em;
+  }
+  .iconos input{
+    height: 30px;
+    width: 200px;
+    margin-left: -200px;
+    margin-right: -10px;
+    background: black;
+    border-style: unset;
+    border-style: solid 1px white;
+    border-radius: 0%;
+    color: white;
+    padding: 5%;
+  }
+
+  .iconos input::placeholder{
+    color: rgb(197, 195, 195);
+  }
+
+  .iconos:hover{
+    cursor: pointer;
+  }
+
+  .iconosDerecha{
+    display: flex;
+    
+  }

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faMagnifyingGlass , faBell, faXmark} from '@fortawesome/free-solid-svg-icons'
 import "./Navbar.css";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
+  const [buscador, setBuscador] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -23,6 +26,7 @@ const Navbar = () => {
         src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
         alt="Netflix Logo"
       />
+
 
       <div className="nav_menu">
         <a className="nav_item" href="#">
@@ -45,12 +49,22 @@ const Navbar = () => {
           Mi lista
         </a>
       </div>
-
-      <img
-        className="user"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-        alt="user"
-      />
+     
+     <div className="iconosDerecha">
+          <div className="iconos">
+            {buscador&&<input type="text" placeholder="Títulos, personas, géneros" autoFocus/>}
+              {!buscador&&<FontAwesomeIcon icon={faMagnifyingGlass} onClick={()=>{setBuscador(true)}} />}
+              {buscador&&<FontAwesomeIcon icon={faXmark} onClick={()=>{setBuscador(false)}}  />}
+              <FontAwesomeIcon icon={faBell} />
+          </div>
+          
+          <img
+            className="user"
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+            alt="user"
+          />
+      </div>   
+     
     </div>
   );
 };

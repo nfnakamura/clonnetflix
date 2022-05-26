@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { apiBuilder, apiLanguage, apiEntity, apiQuality } from '../apiConfig';
+import { apiBuilder, apiLanguage, apiEntity, apiQuality } from '../services/apiConfig';
 import { randomIndex } from '../utils/utils';
 
 

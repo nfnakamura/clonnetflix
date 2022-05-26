@@ -1,10 +1,11 @@
 import React from 'react'
 import Slider from 'react-slick'
-import { apiEntity } from '../../apiConfig'
+import { apiEntity } from '../../services/apiConfig'
 import useApi from '../../hooks/useApi'
 import Card from '../Card/Card'
 import Separator from '../Separator/Separator'
 import { settingsSlider } from './settings'
+import styles from './Carrousel.module.css'
 
 
 const Carrousel = ({entity, title}) => {
@@ -14,9 +15,9 @@ const Carrousel = ({entity, title}) => {
 
   return (
     <>
-        <Separator height={"20px"}/>
+        
         <div>
-            <h1 style={{color:"whitesmoke"}}>{title}</h1>
+            <h1 className={styles.titulo}>{title}</h1>
         </div>
       <Slider {...settingsSlider}>
         {loading ? (

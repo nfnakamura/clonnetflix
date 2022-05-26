@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { apiBuilder } from '../../apiConfig';
+import { apiBuilder } from '../../services/apiConfig';
 import styles from './Card.module.css'
 
 const Card = ({title, imgPath}) => {
